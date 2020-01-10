@@ -1,4 +1,4 @@
-# MacImgClone
+# MacImageClone
 This scripts allows to backup and restore an macOS system with APFS file system.
 I used it successfully with some old and new Macs with images from macos 10.14 and 10.15.1.
 
