@@ -64,6 +64,8 @@ read
 
 	# wipe the first blocks of the disk (necessary to repartitioning an APFS formated disk)
 	echo "Cleaning the first blocks of the disk ${TARGETDISK}, now."
+	diskutil unmountDisk ${TARGETDISK}
+	sleep 3
 	dd if=/dev/zero of=/dev/r"${TARGETDISK}" bs=10m count=100 || ( echo -e "\nERROR: Could not wipe the first 1GB of the disk '${TARGETDISK}'.\nIs some partition of the disk still mounted ?\nPlease CLEAN/WIPE (NOT FORMAT) the disk manually OR (on Macs with Apple T2 Security Chip) eject, mount and unmount the disk and retry the restore !!!\n")
 	dd if=/dev/zero of=/dev/r"${TARGETDISK}" bs=10m count=1 || exit -1
 

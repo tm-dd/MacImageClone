@@ -1,6 +1,6 @@
 # MacImageClone
 This scripts allows to backup and restore an macOS system with APFS file system.
-I used it successfully with some old and new Macs with images from macos 10.14 and 10.15.1.
+I used it successfully with some old and new Macs with images from macos 10.14 and 10.15.
 
 The benefit to use this scripts instead of an MDM server is the much faster installation of big system (image with more than 100 GB).
 
